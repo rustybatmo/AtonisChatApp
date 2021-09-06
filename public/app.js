@@ -1,4 +1,6 @@
-const socket = io("http://localhost:4000");
+const port = process.env.PORT || "http://localhost:4000";
+
+const socket = io(port);
 
 const handle = document.querySelector("#handle");
 const message = document.querySelector("#message");
